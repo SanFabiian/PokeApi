@@ -1,0 +1,46 @@
+.header
+	grid-column 1 / 3
+	display flex
+	justify-content space-evenly
+	align-items center
+	img
+		max-height 5rem
+.showMore
+	padding 1rem
+	background #37A3F0
+	color #FFF
+	border none
+	cursor pointer
+	&:hover
+		animation pokedex_item_hover .3s ease-in-out forwards
+	&:active
+		background darken(#37A3F0, 20%)
+.pokedex
+	display grid
+	grid-template-columns repeat(4, 1fr)
+	gap 2rem
+	&__item
+		display flex
+.pokedex_item
+	background #ef5350
+	text-align center
+	border-radius 1rem
+	a
+		color #fff
+		text-decoration none
+	h2
+		padding 1rem
+		font-size 2rem
+		&:first-letter
+			text-transform uppercase
+	&:hover
+		animation pokedex_item_hover .3s ease-in-out forwards
+		//  will-change transform, scale
+
+
+@keyframes pokedex_item_hover
+	from
+		transform scale(1)
+	to
+		transform scale(1.1)
+
