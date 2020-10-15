@@ -1,0 +1,79 @@
+.pokemon_inner
+	width 90%
+	margin 0 auto
+	margin-top 2rem
+	padding-bottom .5rem
+	border-radius 1.5rem
+	position relative
+	overflow hidden
+	background lightness(color_one, 10%)
+	box-shadow 0 0 1rem 0 #313131
+	a
+		position absolute
+		top 1rem
+		right 1rem
+		font-family font_one
+		font-size font_size_big
+		color color_two
+		z-index 3
+.pokemon_item
+	box-shadow 0 0 11px 4px rgba(136,136,136,26%)
+	h3
+		position absolute
+		background color_one
+		padding  .5rem 1rem
+		font-family: font_one
+		font-size font_size_one
+		color color_two
+		z-index 1
+
+.pokemon_item, .pokemon_card
+	position relative
+	a
+		position relative
+	img
+		width 100%
+.pokemon_name
+	position absolute
+	right 0
+	bottom 0
+	left 0
+	background alpha(color_one, .5)
+	padding 1rem 2rem
+	font-family font_one
+	color color_two
+	h2
+		font-size font_size_one
+		&:first-letter
+			text-transform uppercase
+	p
+		font-size font_size_two
+.pokemon_card, .pokemon_card-description
+	margin 0
+	padding 2rem
+	padding-top 0
+	h2
+		font-family font_one
+		font-size font_size_big
+		color color_two
+		&:first-letter
+			text-transform uppercase
+	h3
+		font-family font_one
+		font-size font_size_two
+		color color_two
+		line-height 2.5rem
+	span
+		font-weight 300
+	&-status
+		padding 2rem
+	p
+		margin-bottom 1rem
+		font-family font_one
+		font-size font_size_two
+		font-weight 300
+		color color_two
+.modal
+	position fixed
+	top 0
+	z-index 2

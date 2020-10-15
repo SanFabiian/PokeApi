@@ -1,3 +1,23 @@
-@import './utils/_global.styl'
-@import './utils/_modal.styl'
-@import './utils/_pokedex.styl'
+@import 'lib/_var.styl'
+@import 'lib/_global.styl'
+@import 'lib/_grid.styl'
+@import 'lib/_header.styl'
+@import 'lib/_pokemons.styl'
+details {
+    border-radius: 4px;
+    padding: .5em .5em 0;
+}
+
+summary {
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+}
+
+details[open] {
+    padding: .5em;
+}
+
+details[open] summary {
+    margin-bottom: .5em;
+}

@@ -1,0 +1,1 @@
+.pokemons_wrap{grid-template-columns:repeat(12,1fr)}.content,.header{grid-column:2/12}.pokemon_item{grid-column:span 3}.pokemon_inner{display:grid;grid-template-columns:repeat(8,1fr);height:50vh}.pokemon_card img{width:auto;height:100%}
