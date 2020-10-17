@@ -1,0 +1,124 @@
+.black
+    background #00000D
+    color #fff
+.blue
+    background #48B8D6
+    color darken(#48B8D6, 80%)
+.brown
+    background #7A634C
+    color #fff
+.gray
+    background #ABABAB
+    color darken(#ABABAB, 80%)
+.green
+    background #02D6A7
+    color darken(#02D6A7, 80%)
+.pink
+    background #E87D8B
+    color darken(#E87D8B, 80%)
+.purple
+    background #BF64FF
+    color darken(#BF64FF, 80%)
+.red
+    background #EB7852
+    color darken(#EB7852, 80%)
+.white
+    background #EDE8E9
+    color #00000D
+.yellow
+    background #F7CA1E
+    color darken(#F7CA1E, 80%)
+.normal, .fighting, .flying, .poison, .ground, .rock, .bug, .ghost, .steel, .fire, .water, .grass, .electric, .psychic, .ice, .dragon, .dark, .fairy, .unknown, .shadow
+    margin 0 .5rem
+    padding .3rem 2rem
+    border-radius 1rem
+    background grey
+    color color_two
+.normal
+    background white
+    color darken(grey, 50%)
+    &::after
+        content 'Normal'
+.fighting
+    background orange
+    &::after
+        content 'Lucha'
+.flying
+    background lightblue
+    &::after
+        content 'Aéreo'
+.poison
+    background purple
+    &::after
+        content 'Veneno'
+.ground
+    background brown
+    &::after
+        content 'Tierra'
+.rock
+    background darkgrey
+    &::after
+        content 'Piedra'
+.bug
+    background lightgreen
+    &::after
+        content 'Bicho'
+.ghost
+    background darken(purple, 50%)
+    &::after
+        content 'Espectro'
+.steel
+    background black
+    &::after
+        content 'Acero'
+.fire
+    background red
+    &::after
+        content 'Fuego'
+.water
+    background blue
+    &::after
+        content 'Agua'
+.grass
+    background green
+    &::after
+        content 'Hierba'
+.electric
+    background yellow
+    &::after
+        content 'Electrico'
+.psychic
+    background purple
+    &::after
+        content 'Psíquico'
+.ice
+    background skyblue
+    &::after
+        content 'Hielo'
+.dragon
+    background orange
+    &::after
+        content 'Mounstruo'
+.dark
+    background black
+    &::after
+        content 'Oscuro'
+.fairy
+    background pink
+    &::after
+        content 'Hada'
+.unknown
+    background coral
+    &::after
+        content 'Desconocido'
+.shadow
+    background grey
+    &::after
+        content 'Sombra'
+
+.false::after
+    color red
+    content '✖'
+.true::after
+    color green
+    content '✔'

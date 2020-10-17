@@ -4,10 +4,10 @@ const GetData = async (id, page) => {
     try {
         const response = await fetch(apiUrl)
         const data = await response.json()
-        console.log(data,'API GET DATA')
+        // console.log(data,'API GET DATA')
         return data
     } catch (error) {
-        console.log('Fetch Error', error)
+        // console.log('Fetch Error', error)
     }
 }
 export default GetData
