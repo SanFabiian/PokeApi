@@ -5,7 +5,7 @@ const Pokemons = async () => {
     const pokemon = await data(id)
     const view = `
     <div class="card ${pokemon.color}">
-        <a href="/index.html" id="card_close" class="card_close">X</a>
+        <a href="/PokeApi/index.html" id="card_close" class="card_close">X</a>
         <article class="card_img">
             <img class="" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/${pokemon.img}.png" alt="${pokemon.name}">
         </article>
