@@ -8,7 +8,7 @@ async function data(num) {
     const responseSpecies = await fetch(speciesURL)
     const dataSpecies = await responseSpecies.json()
 
-    const evolutionURL = `https://pokeapi.co/api/v2/evolution-chain/${num}`
+    const evolutionURL = `https://pokeapi.co/api/v2/pokemon/${num}`
     const responseEvolution = await fetch(evolutionURL)
     const dataEvolution = await responseEvolution.json()
 

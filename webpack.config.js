@@ -1,13 +1,17 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const copyWebpackPlugin = require('copy-webpack-plugin')
-const webpack = require('webpack')
-const WebpackDevServer = require('webpack-dev-server')
 module.exports = {
     entry: './src/index.js',
+    devServer: {
+        contentBase: './dist',
+        port: 1706,
+        open: true,
+        host: '0.0.0.0'
+    },
     output: {
         path: path.resolve(__dirname, './dist'),
-        filename: './js/main.js'
+        filename: './src/js/main.js'
     },
     resolve: {
         extensions: ['.js'],
@@ -35,7 +39,7 @@ module.exports = {
             patterns:[
                 {
                     from:(__dirname, './src/styles/*.css'),
-                    to: 'css/[name].css'
+                    to: './src/css/[name].css'
                 }
             ]
         })
